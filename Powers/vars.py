@@ -55,19 +55,19 @@ class Development:
 
     # Fill in these vars if you want to use Traditional method of deploying
     LOGGER = True
-    BOT_TOKEN = "YOUR BOT_TOKEN"
-    API_ID = 12345  # Your APP_ID from Telegram
-    API_HASH = "YOUR API HASH"  # Your APP_HASH from Telegram
-    OWNER_ID = 1344569458  # Your telegram user id defult to mine
-    MESSAGE_DUMP = -100  # Your Private Group ID for logs
-    DEV_USERS = []
-    SUDO_USERS = []
-    WHITELIST_USERS = []
-    DB_URI = ""  # Your mongo DB URI
-    DB_NAME = ""  # Your DB name
+    BOT_TOKEN = "6256462468:AAEzSbfNxONaeJeYdbDrbwdxNbtoeLcFhAU"
+    API_ID =  26959103 # Your APP_ID from Telegram
+    API_HASH = "ebe24f37c6f8ee727fc406c68ba5bc70"  # Your APP_HASH from Telegram
+    OWNER_ID = 5657218265  # Your telegram user id defult to mine
+    MESSAGE_DUMP = -1001857365749  # Your Private Group ID for logs
+    DEV_USERS = [5657218265]
+    SUDO_USERS = [5657218265]
+    WHITELIST_USERS = [5657218265]
+    DB_URI = "mongodb+srv://Anshul0554:Anshul0554@cluster0.uwx7fnj.mongodb.net/?retryWrites=true&w=majority"  # Your mongo DB URI
+    DB_NAME = "Cluster0"  # Your DB name
     NO_LOAD = []
     PREFIX_HANDLER = ["!", "/"]
-    SUPPORT_GROUP = "SUPPORT_GROUP"
-    SUPPORT_CHANNEL = "SUPPORT_CHANNEL"
-    VERSION = "VERSION"
+    SUPPORT_GROUP = "HentaiAssociation"
+    SUPPORT_CHANNEL = "HentaiAssociation"
+    VERSION = "5"
     WORKERS = 8
