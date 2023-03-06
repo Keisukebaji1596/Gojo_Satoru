@@ -52,25 +52,20 @@ async def gen_start_kb(q: Message or CallbackQuery):
             [("📚 Commands & Help", "commands")],
             [
                 (
-                    "🗃️ Source Code",
-                    "https://github.com/Gojo-Bots/Gojo_Satoru",
-                    "url",
-                ),
-                (
                     "Owner ❤️",
-                    f"https://t.me/iamgojoof6eyes",
+                    f"https://t.me/Keisukebaji6969",
                     "url",
                 ),
             ],
             [
                 (
-                    "Join for GFx work",
-                    "https://t.me/psy_Logos",
+                    "Join for Hentai work",
+                    "https://t.me/HentaiAssociation",
                     "url",
                 ),
                 (
                     "Powered by",
-                    "https://gojo_bots_network.t.me",
+                    "https://t.me/HentaiAssociation",
                     "url",
                 ),
             ],
