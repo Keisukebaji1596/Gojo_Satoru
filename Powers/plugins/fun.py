@@ -43,6 +43,9 @@ async def fun_run(_, m: Message):
     await m.reply_text(choice(extras.RUN_STRINGS))
     LOGGER.info(f"{m.from_user.id} runed in {m.chat.id}")
     return
+@Gojo.on_nessage(command("dart"))
+dart = await send_dice(message.chat.id, emoji=🎯)
+value = dart.value
 
 
 @Gojo.on_message(command("slap"))
