@@ -1,6 +1,7 @@
 from html import escape
 from random import choice
 
+import pyrogram
 from pyrogram import enums
 from pyrogram.errors import MessageTooLong
 from pyrogram.types import Message
@@ -81,13 +82,13 @@ async def fun_slap(c: Gojo, m: Message):
 
 @Gojo.on_message(command("dart"))
 
-async def fun_decide(_, m: Message):
+async def fun_dart(_, m: Message):
 
     reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
 
     await app.send_dice(chat_id, "🎯")
 
-    LOGGER.info(f"{m.from_user.id} decided in {m.chat.id}")
+    LOGGER.info(f"{m.from_user.id} dart in {m.chat.id}")
 
     return
 
