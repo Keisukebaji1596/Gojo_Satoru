@@ -86,7 +86,7 @@ async def fun_dart(_, m: Message):
 
     reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
 
-    await Gojo.send_dice(m.chat.id, "🎯")
+   await c.send_dice(m.chat.id, '🎯')
 
     LOGGER.info(f"{m.from_user.id} dart in {m.chat.id}")
 
