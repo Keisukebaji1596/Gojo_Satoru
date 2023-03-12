@@ -80,17 +80,6 @@ async def fun_slap(c: Gojo, m: Message):
     LOGGER.info(f"{m.from_user.id} slaped in {m.chat.id}")
     return
 
-@Gojo.on_message(command("dart"))
-
-async def fun_dart(_, m: Message):
-
-    reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
-
-    z = await Gojo.send_dice(m.chat.id, "🎯")
-    
-    print(z.dice.value)
-    LOGGER.info(f"{m.from_user.id} dart in {m.chat.id}")
-    return
 
 @Gojo.on_message(command("roll"))
 async def fun_roll(_, m: Message):
@@ -142,6 +131,13 @@ async def now(c: Gojo, m: Message):
     rtext = NO[0]
     await reply_text(rtext)
     LOGGER.info(f"{m.from_user.id} said NO or may be YES in {m.chat.id}")
+    return
+
+@Gojo.on_message(command("bet"))
+async def fun_shrug(_, m: Message):
+    reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
+    await reply_text(r"This command is temporarily banned for Everyone")
+    LOGGER.info(f"{m.from_user.id} shruged in {m.chat.id}")
     return
 
 
