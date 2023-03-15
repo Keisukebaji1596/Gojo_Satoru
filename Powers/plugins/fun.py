@@ -88,6 +88,13 @@ async def fun_roll(c: Gojo, m: Message):
     LOGGER.info(f"{m.from_user.id} roll in {m.chat.id}")
     return
 
+@Gojo.on_message(command("basket"))
+async def fun_basket(c: Gojo, m: Message):
+    z= await c.send_basket(m.chat.id,'🏀')
+    z.basket.value
+    LOGGER.info(f"{m.from_user.id} basket in {m.chat.id}")
+    return
+
 @Gojo.on_message(command("toss"))
 async def fun_toss(_, m: Message):
     reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
