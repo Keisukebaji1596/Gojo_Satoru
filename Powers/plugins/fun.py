@@ -87,9 +87,9 @@ async def fun_roll(c: Gojo, m: Message):
     z= await c.send_dice(m.chat.id,'🎲')
     time.sleep(6)
     if z.dice.value:
-    await m.reply_text(f"You won {z.dice.value}")
+        await m.reply_text(f"You won {z.dice.value}")
     else:
-    await m.reply_text("Better luck next time")
+        await m.reply_text("Better luck next time")
     LOGGER.info(f"{m.from_user.id} roll in {m.chat.id}")
     return
 
@@ -97,9 +97,9 @@ async def fun_roll(c: Gojo, m: Message):
 async def fun_basket(c: Gojo, m: Message):
     z= await c.send_dice(m.chat.id,'🏀')
     if z.dice.value:
-    await m.reply_text(f"You won {z.dice.value}")
+        await m.reply_text(f"You won {z.dice.value}")
     else:
-    await m.reply_text("Better luck next time")
+        await m.reply_text("Better luck next time")
     LOGGER.info(f"{m.from_user.id} basket in {m.chat.id}")
     return
 
@@ -108,9 +108,9 @@ async def fun_roll(c: Gojo, m: Message):
     z= await c.send_dice(m.chat.id,'⚽️')
     time.sleep(6)
     if z.dice.value:
-    await m.reply_text(f"You won {z.dice.value}")
+        await m.reply_text(f"You won {z.dice.value}")
     else:
-    await m.reply_text("Better luck next time")
+        await m.reply_text("Better luck next time")
     LOGGER.info(f"{m.from_user.id} roll in {m.chat.id}")
     return
 
