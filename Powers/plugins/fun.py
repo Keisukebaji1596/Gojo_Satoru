@@ -84,7 +84,7 @@ async def fun_slap(c: Gojo, m: Message):
 @Gojo.on_message(command("roll"))
 async def fun_roll(_, m: Message):
     reply_text = app.dart()
-    z= await c.send_dart(m.chat.id,'🎯')
+    z= await Gojo.send_dart(m.chat.id,'🎯')
     z.dice.value
     LOGGER.info(f"{m.from_user.id} roll in {m.chat.id}")
     return
