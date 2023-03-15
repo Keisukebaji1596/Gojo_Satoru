@@ -86,7 +86,7 @@ async def fun_slap(c: Gojo, m: Message):
 async def fun_roll(c: Gojo, m: Message):
     z= await c.send_dice(m.chat.id,'🎲')
     time.sleep(6)
-    if z.dice.value:
+    if z.dice.value  in [5,6]:
         await m.reply_text(f"You won {z.dice.value}")
     else:
         await m.reply_text("Better luck next time")
@@ -96,7 +96,7 @@ async def fun_roll(c: Gojo, m: Message):
 @Gojo.on_message(command("basket"))
 async def fun_basket(c: Gojo, m: Message):
     z= await c.send_dice(m.chat.id,'🏀')
-    if z.dice.value:
+    if z.dice.value==5:
         await m.reply_text(f"Damn!!! You won ")
     else:
         await m.reply_text("Better luck next time")
@@ -107,7 +107,7 @@ async def fun_basket(c: Gojo, m: Message):
 async def fun_roll(c: Gojo, m: Message):
     z= await c.send_dice(m.chat.id,'⚽️')
     time.sleep(6)
-    if z.dice.value:
+    if z.dice.value== 5:
         await m.reply_text(f"Damn!!  You won ")
     else:
         await m.reply_text("Better luck next time")
