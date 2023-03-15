@@ -88,7 +88,6 @@ async def fun_roll(c: Gojo, m: Message):
     LOGGER.info(f"{m.from_user.id} roll in {m.chat.id}")
     return
 
-
 @Gojo.on_message(command("toss"))
 async def fun_toss(_, m: Message):
     reply_text = m.reply_to_message.reply_text if m.reply_to_message else m.reply_text
